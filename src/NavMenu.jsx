@@ -16,7 +16,7 @@ export default function NavMenu() {
        <div className={!Show ? "menu-box slider":"menu-box"}>
         
            <ul className={!Show ? 'Link-list slider':"Link-list"}>
-               <li onClick={()=>{setShow(!Show)}}><NavLink exact to="/">Home <span></span></NavLink></li>
+               <li onClick={()=>{setShow(!Show)}}><NavLink exact to="/home">Home <span></span></NavLink></li>
                <li onClick={()=>{setShow(!Show)}}><NavLink to="/about">About <span></span></NavLink></li>
                <li onClick={()=>{setShow(!Show)}}><NavLink to="/projects">Projects <span></span></NavLink></li>
                <li onClick={()=>{setShow(!Show)}}><NavLink to="/contact">Contact <span></span></NavLink></li>
