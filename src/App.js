@@ -11,12 +11,6 @@ function App() {
   <BrowserRouter>
 
    <NavMenu/>
-   
-   <Switch>
-     <Route exact path="/">
-       <Home/>
-     </Route>
-   </Switch>
 
    <Switch>
      <Route path="/about">
@@ -33,6 +27,12 @@ function App() {
    <Switch>
      <Route path="/contact">
        <Contact/>
+     </Route>
+   </Switch>
+   
+   <Switch>
+     <Route path="/">
+       <Home/>
      </Route>
    </Switch>
 
