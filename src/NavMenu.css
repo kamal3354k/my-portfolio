@@ -10,6 +10,9 @@
     border-radius: 8px;
     box-shadow: 0 0px 8px 0px rgb(0 0 0 / 53%);
 }
+.container{
+    max-width: 1266px;
+}
 h4.skill-title-Es {
     display: flex;
     gap: 1.5rem;
