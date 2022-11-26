@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter , Switch , Route} from "react-router-dom";
+import { BrowserRouter , Switch , Route, Routes} from "react-router-dom";
 import NavMenu from "./NavMenu";
 import Home from './Pages/Home'
 import About from './Pages/About'
@@ -8,11 +8,11 @@ import Contact from './Pages/Contact'
 function App() {
   return (
    <>
-  <BrowserRouter>
+  <BrowserRouter basename="my-portfolio">
 
    <NavMenu/>
 
-   <Switch>
+   {/* <Switch>
      <Route path="/about">
        <About/>
      </Route>
@@ -35,8 +35,15 @@ function App() {
        <Home/>
      </Route>
    </Switch>
-
-   </BrowserRouter>
+*/}
+<Routes>
+<Route exact path="/" element={<Home/>}/>
+<Route exact path="/about" element={<About/>}/>
+<Route exact path="/projects" element={<Projects/>}/>
+<Route exact path="/contact" element={<Contact/>}/>
+<Route path="/*" element={<div className="not-found-div">404 Not found </div>}/>
+</Routes>
+   </BrowserRouter> 
    </>
   );
 }

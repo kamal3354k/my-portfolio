@@ -13,6 +13,13 @@
 .container{
     max-width: 1266px;
 }
+.not-found-div{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    padding: 80px 40px;
+}
 h4.skill-title-Es {
     display: flex;
     gap: 1.5rem;
